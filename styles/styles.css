@@ -1,0 +1,285 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+    font-family: "Inter", system-ui;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    color: #011627;
+    background-color: #fcfcfc;
+    }
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Oxygen", system-ui;
+}
+
+p {
+    font-family: "Inter", system-ui;
+}
+
+
+/* Elements
+--------------------------------------------- */
+section{
+    padding: 0 1rem;
+}
+
+
+
+/* Links
+--------------------------------------------- */
+.site-navigation a{
+	text-decoration: none;
+    font-size: 1.25rem;
+    color: #011627;
+}
+
+.site-navigation a:visited {
+	color: #011627;
+}
+
+.site-navigation a:hover, .site-navigation a:focus,  .site-navigation a:active {
+    text-decoration: underline 3px #ff5154;
+
+}
+
+.projects-wrapper a{
+    text-decoration: none;
+    color: #011627;
+}
+
+.projects-wrapper a:visited {
+	color: #011627;
+}
+
+.projects-wrapper a:hover, .projects-wrapper a:focus,  .projects-wrapper a:active {
+    background-color: #d9f9a5;
+    transition-duration: 0.25s;
+	font-weight: 600;
+    border-radius: 8px;
+    border: solid 2.5px #ff5154;
+}
+
+.contact-icons a{
+    font-size: 32px;
+    color: #011627;
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+
+.contacts-icons a:visited{
+    color: #011627;
+}
+
+.contact-icons a:hover, .contacts-icons a:focus, .contacts-icons a:active{
+    background-color: #011627;
+    color: #fcfcfc;
+    transition-duration: 0.25s;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+footer a{
+    color: #011627;
+}
+
+footer a:visited{
+    color: #011627;
+}
+
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.site-wrapper{
+    max-width: 1200px;  
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-wrapper{
+    width: 40px;
+}
+
+
+.site-navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3.5rem;
+    padding: 0;
+}
+
+.site-navigation li{
+    display: block;
+}
+
+
+/* Main
+--------------------------------------------- */
+.about{
+    width: 60%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+
+}
+
+.about h1{
+    font-size: 3rem;
+}
+
+.about p{
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.projects h2{
+    display: flex;
+    justify-content: center;
+}
+.projects-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 2rem;
+
+}
+
+.project-card{
+    width: fit-content;
+    height: auto;
+    background-color: #d9f9a5;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+}
+
+.pill-box{
+    display: flex;
+    justify-content: start;
+    column-gap: 0.5rem;
+}
+.pill {
+    background-color: #011627;
+    color: #fcfcfc;
+    padding: 4px 8px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.project-image-wrapper{
+    width: 15rem;
+    height: 10rem;
+    background-color: #eae9e9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image-wrapper p{
+    font-size: 1.125rem;
+}
+
+.contact{
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.contact-icons{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+
+/* Footer
+--------------------------------------------- */
+footer{
+    height: auto;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.footer-logo-wrapper{
+    width: 20px;
+    height: 20px;
+}
