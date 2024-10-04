@@ -30,7 +30,8 @@ body {
     letter-spacing: 0.05rem;
     color: #011627;
     background-color: #fcfcfc;
-    }
+    margin: 0 auto;
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,8 +55,14 @@ section{
 --------------------------------------------- */
 .site-navigation a{
 	text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: #011627;
+}
+
+@media (min-width: 44em){
+        .site-navigation a{
+        font-size: 1.25rem;
+    }
 }
 
 .site-navigation a:visited {
@@ -122,14 +129,13 @@ body{
     justify-content: start;
     align-items: center;
 }
-
-.site-wrapper{
-    max-width: 1200px;  
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+
+.site-wrapper{
+    max-width: 80rem;  
+}
 
 /* Header
 --------------------------------------------- */
@@ -150,8 +156,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 3.5rem;
+    column-gap: 1.5rem;
     padding: 0;
+}
+
+@media (min-width: 44em){
+    .site-navigation ul{
+        column-gap: 3.5rem;
+    }
 }
 
 .site-navigation li{
@@ -162,27 +174,51 @@ body{
 /* Main
 --------------------------------------------- */
 .about{
-    width: 60%;
+    width: 100%;
     height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 1rem;
+}
 
+@media (min-width: 80em){
+    .about{
+        width: 60%;
+    }
 }
 
 .about h1{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 44em){
+    .about h1{
+        font-size: 3rem;
+}
+
 }
 
 .about p{
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 0.05rem;
+}
+
+@media (min-width: 44em){
+    .about p{
+        font-size: 1.125rem;
+    }
 }
 
 
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 44em){
+    h2{
+        font-size: 2rem;
+    }
 }
 
 .projects{
@@ -249,7 +285,7 @@ h2{
 }
 
 .contact-icons{
-    width: 15%;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -268,6 +304,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -276,10 +313,14 @@ footer{
     justify-content: start;
     align-items: center;
     column-gap: 3rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .footer-logo-wrapper{
     width: 20px;
     height: 20px;
+}
+
+.footer p{
+    width: fit-content;
 }
