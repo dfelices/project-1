@@ -182,6 +182,12 @@ body{
     padding: 0 1rem;
 }
 
+@media (min-width: 44em){
+    .about{
+        width: 80%;
+    }
+}
+
 @media (min-width: 80em){
     .about{
         width: 60%;
