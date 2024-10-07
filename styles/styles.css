@@ -71,6 +71,7 @@ section{
 .projects-wrapper a{
     text-decoration: none;
     color: #011627;
+    padding: 0.5rem;
 }
 
 .projects-wrapper a:visited {
@@ -138,11 +139,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-
 }
+
 
 .logo-wrapper{
     width: 32px;
+    margin-left: 1rem;
 }
 
 @media (min-width: 48em){
@@ -157,6 +159,7 @@ body{
     justify-content: space-between;
     align-items: center;
     column-gap: 1.125rem;
+    padding: 0 1rem;
 }
 
 @media (min-width: 48em){
@@ -188,7 +191,8 @@ body{
 }
 
 .about h1{
-    font-size: 2.25rem;
+    font-size: 2rem;
+    padding: 0 1.25rem;
 }
 
 @media (min-width:48em){
@@ -196,9 +200,11 @@ body{
         font-size: 2.75rem;
     }
 }
+
 .about p{
     font-size: 1.125rem;
     letter-spacing: 0.05rem;
+    padding: 0 1.25rem;
 }
 
 
