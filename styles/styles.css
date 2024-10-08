@@ -71,7 +71,7 @@ section{
 .projects-wrapper a{
     text-decoration: none;
     color: #011627;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .projects-wrapper a:visited {
@@ -79,11 +79,10 @@ section{
 }
 
 .projects-wrapper a:hover, .projects-wrapper a:focus,  .projects-wrapper a:active {
-    background-color: #d9f9a5;
     transition-duration: 0.25s;
 	font-weight: 600;
     border-radius: 8px;
-    border: solid 2.5px #ff5154;
+    background-color: #ff5154;
 }
 
 .contact-icons a{
@@ -232,8 +231,7 @@ h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 3rem;
-    column-gap: 2rem;
+    gap: 3rem; 
 
 }
 
