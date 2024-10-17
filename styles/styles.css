@@ -53,66 +53,20 @@ section{
 
 /* Links
 --------------------------------------------- */
-.site-navigation a{
-	text-decoration: none;
-    font-size: 1.25rem;
-    color: #011627;
-}
 
-.site-navigation a:visited {
-	color: #011627;
-}
-
-.site-navigation a:hover, .site-navigation a:focus,  .site-navigation a:active {
-    text-decoration: underline 3px #ff5154;
-
-}
-
-.projects-wrapper a{
+a{
     text-decoration: none;
     color: #011627;
-    padding: 0.2rem;
-}
-
-.projects-wrapper a:visited {
-	color: #011627;
-}
-
-.projects-wrapper a:hover, .projects-wrapper a:focus,  .projects-wrapper a:active {
-    transition-duration: 0.25s;
-	font-weight: 600;
-    border-radius: 8px;
-    background-color: #ff5154;
-}
-
-.contact-icons a{
-    font-size: 32px;
-    color: #011627;
-    border-radius: 2px;
     padding: 0.5rem;
 }
 
-.contacts-icons a:visited{
+a:visited{
     color: #011627;
 }
 
-.contact-icons a:hover, .contacts-icons a:focus, .contacts-icons a:active{
-    background-color: #011627;
-    color: #fcfcfc;
+a:hover, a:focus, a:active{
     transition-duration: 0.25s;
-    border-radius: 4px;
-    padding: 0.5rem;
 }
-
-footer a{
-    color: #011627;
-}
-
-footer a:visited{
-    color: #011627;
-}
-
-
 
 /*--------------------------------------------------------------
 # Layout
@@ -169,6 +123,17 @@ body{
 
 .site-navigation li{
     display: block;
+}
+
+
+.site-navigation a{
+    font-size: 1.25rem;
+}
+
+
+.site-navigation a:hover, .site-navigation a:focus,  .site-navigation a:active {
+    text-decoration: underline 3px #ff5154;
+
 }
 
 
@@ -232,7 +197,17 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem; 
+}
 
+.projects-wrapper a{
+    padding: 0.2rem;
+}
+
+
+.projects-wrapper a:hover, .projects-wrapper a:focus,  .projects-wrapper a:active {
+	font-weight: 600;
+    border-radius: 8px;
+    background-color: #ff5154;
 }
 
 .project-card{
@@ -288,6 +263,17 @@ h2{
     column-gap: 1rem;
 }
 
+.contact-icons a{
+    font-size: 32px;
+    border-radius: 2px;
+}
+
+.contact-icons a:hover, .contacts-icons a:focus, .contacts-icons a:active{
+    background-color: #011627;
+    color: #fcfcfc;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
 
 
 /* Footer
